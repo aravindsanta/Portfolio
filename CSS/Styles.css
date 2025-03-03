@@ -1,0 +1,164 @@
+
+/*Name: Aravind Santha
+File Name: Assignment 1, css file
+Date Created: Feb 05, 2025*
+Description: This is a css file that adds the styling to the protfolio webpage*//* General Styles */
+
+body {
+    font-family: 'Arial', sans-serif;/*This sets the font*/
+    margin: 0;/*Removes the default margin*/
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #c1cbd4;
+}
+
+/*Adds padding to these elements*/
+header, nav, section, footer {
+    padding: 20px;
+}
+/*This sets the maximum width of the contact form*/
+@media (max-width: 768px){
+    .contact-form {
+        padding: 1em;
+        max-width: 90%;
+    }
+}
+.contact-info, .contact-info2 {
+    display: flex;/*This enables the flexbox*/
+    gap: 20px;/*THis adds space between flex items*/
+}
+
+/*This will take care of the distance between the email and phone on the resume */
+.separator {
+    margin: 0 325px;
+}
+/*This will take care of the distance between the linkedin and github on the resume */
+ .separator2 {
+    margin: 0 280px;
+}
+/*This makes the year add to the projects*/
+.separator3,.separator4, .separator5, .separator6, .separator7,.separator8 {
+    display: flex;  
+    justify-content: flex-start; 
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightcoral;
+    padding: 1em;
+    color: white;
+}
+/*This styles the log "Aravind" to white color*/
+nav .logo {
+    font-size: 1.5em;
+    text-decoration: none;
+    color:white;
+}
+/*This styles the links on the top of the page as a flex box so that each
+one is next to one another*/
+nav .links {
+    list-style-type: none;
+    display: flex;
+}
+/*This spaces the distance between the links home-resume-projects-contact*/
+nav .links li {
+    margin: 0 10px;
+}
+/*This colors the links to white in color*/
+nav .links a {
+    color: white;
+ text-decoration: none;
+}
+/*This add the padding around the main content area*/
+main {
+    padding: 2em;
+
+}
+/*This colors and sets the background color for the resume*/
+.column {
+    flex: 1 1 30%;
+    margin: 1em;
+    padding: 1em;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(26, 6, 6, 0.1);
+    background-color: white;
+}
+/*This colors the contact me button and sets the background color*/
+nav .btn {
+    background-color: #ff8800;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+}
+/*This will increase the siz of text area in contact form*/
+input[type="text"], input[type="email"], input[type="tel"] {
+    width: 35%;
+}
+/*This will increase the size of the text area*/
+textarea {
+    width: 40%;
+    padding: 10px;
+    font-size: 1.2em;
+}
+/*This centers the text, adds padding and sets the background color*/
+#Home {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: rgb(220, 227, 231);
+}
+/*This styles the image to be circular, sets dimensions and ensures they are cropped properly*/
+#Home img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+/*This aligns the projects in a column and centers them*/
+.Project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*This colors the background color of the projects container
+centers them*/
+.Project {
+    display: none;
+    text-align: center;
+    background-color:white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(184, 70, 70, 0.1);
+}
+/*This shows the projects in a block*/
+.Project.active {
+    display: block;
+}
+/*This sets the width of the image in the projects, their borders, box-shadow*/
+.Project img {
+    width: 200px;
+    border: 2px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+/*This makes the image to enlarge when you hover over them*/
+.Project img:hover {
+    transform: scale(1.3);
+}
+/*This centers navigation buttons and adds space between them*/
+.navigation {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+/*This styles the footer with a background color, aligns text center and padding*/
+footer {
+    background-color: lightseagreen;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

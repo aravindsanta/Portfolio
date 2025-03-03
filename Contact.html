@@ -1,0 +1,73 @@
+<!--Name: Aravind Santha
+File Name: Assignment 1, contact html file
+Date Created: Feb 05, 2025*
+Description: This is a html file that displays the contact information form-->
+
+
+<!--General Styles -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <!--Link source for css stylesheet-->
+    <link rel="stylesheet" href="./CSS/Styles.css">
+</head>
+<body>
+    <nav>
+        <a href="#" class="logo"><span>Aravind</span></a>
+        <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="Projects.html">Projects</a></li>
+            <li><a href="Contact.html">Contact</a></li>   
+        </ul>
+        <div id="contact-btn" class="btn">Contact Me</div>
+    </nav>
+
+    <main>
+        <form method="post" action="Contact.php">
+
+            <!-- User Info Section -->
+            <fieldset>
+                <legend>Contact Information</legend>
+                <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+                </div>
+                <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+            </div>
+            <div>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone"><br>
+            </div>
+            </fieldset>
+       
+            <!-- Message Section -->
+            
+            <fieldset>
+                
+                <legend>Message</legend>
+                <div>
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+            </div>
+            </fieldset>
+    <!--Submit button-->
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+    <!--footer section-->
+    <footer>
+        <p>&copy; 2025 Aravind Santha</p>
+    </footer>
+
+    <!--Link source for javscript-->
+    <script src="./javascript/Scripts.js"></script>
+</body>
+</html>

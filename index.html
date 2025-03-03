@@ -1,0 +1,84 @@
+<!--Name: Aravind Santha
+File Name: Assignment 1, index html file
+Date Created: Feb 05, 2025*
+Description: This is a html file that displays the home information of my portfolio--> 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aravind Santha Website</title>
+    <!--This is the link for the external stylesheet-->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <!--Navigation bar, this is common for all pages-->
+    <nav>
+        <a href="#" class="logo"><span>Aravind</span></a>
+        <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="Projects.html">Projects</a></li>
+            <li><a href="Contact.html">Contact</a></li>   
+        </ul>
+        <!--Contact me button -->
+        <div id="contact-btn" class="btn">Contact Me</div>
+    </nav>
+
+    <section id="Home">
+        <!--Link to the image source-->
+        <img src ="./images/ARAVIND.jpg" alt="Aravind Santha">
+<!--This is the inforation box within the home section-->
+        <div class="info-box">
+            <h1>Hi, I am Aravind Santha</h1>
+            <h3>Computer Programming student at Algonquin College, Ottawa</h3>
+        </div>
+    </section>
+<!--About section-->
+    <section id="about">
+        <div class="about-box">
+            <div class="about-info">
+                <!--About me heading-->
+                <h1>About Me</h1>
+                <p>Hello! I am a Computer Programming student with a strong passion for coding and problem-solving. 
+                    I am proficient in <strong> HTML, CSS, JavaScript advancements in web development, databases, and 
+                    software engineering principles</strong>. I enjoy writing code and contributing to open-source projects 
+                    like GitHub, which has enhanced my technical skills and teamwork abilities. I am eager to apply 
+                    my knowledge in real-world scenarios and stay updated with the latest advancements in technology. 
+                    I look forward to contributing to innovative projects that positively impact society. Thank you for 
+                    learning more about me!</p>
+            </div>
+<!--Skills section-->
+            <h2>Skills</h2>
+            <div class="Skills">
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Java</li>
+                    <li>SQL</li>
+                    <li>Linux</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+<!--Contacct info setion, this is hidden and dislayed only when conatct me button is clicked-->
+    <section id="contact-info-section" style="display: none;">
+        <h2>Contact Information</h2>
+        <p><strong>Name:</strong> Aravind Santha</p>
+        <p><strong>Email:</strong> sant0281@algonquinlive.com</p>
+        <p><strong>Phone:</strong> +1 (343) 297-9424</p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/aravind-santha-642929331/">Click here</a></p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/aravindsanta">Click here</a></p>
+    </section>
+    <!--Footer content with my copyright information-->
+    <footer>
+        <p>&copy; 2025 Aravind Santha</p>
+       
+    </footer>
+    <!--This is the javascript external links-->
+    <script src="javascript/Scripts.js"></script>
+</body>
+</html>
